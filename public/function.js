@@ -5,7 +5,7 @@ const menuItems = document.querySelectorAll(".menu>ul>li")
 
 
 bars.addEventListener("click", () => {
-    menu.classList.add("show");    
+    menu.classList.add("show");
 });
 
 // remove menu on clicks...

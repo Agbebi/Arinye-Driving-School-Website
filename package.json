@@ -1,0 +1,28 @@
+{
+  "name": "8.-arinye-driving-school-webpage",
+  "version": "1.0.0",
+  "description": "Website for Arinye Driving School",
+  "homepage": "https://github.com/Agbebi/Arinye-Driving-School-Website#readme",
+  "bugs": {
+    "url": "https://github.com/Agbebi/Arinye-Driving-School-Website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agbebi/Arinye-Driving-School-Website.git"
+  },
+  "license": "ISC",
+  "author": "Timothy A.",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "lodash": "^4.17.21",
+    "nodejs": "^0.0.0",
+    "nodemailer": "^7.0.6"
+  }
+}
