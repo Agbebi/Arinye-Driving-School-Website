@@ -938,7 +938,7 @@ form button {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 470px) {
   nav > ul,
   header > .social,
   .right-content > a,
