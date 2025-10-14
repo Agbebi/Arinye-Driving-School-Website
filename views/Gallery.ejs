@@ -1,14 +1,22 @@
  <section id="reason-cards">
 
-        <h3 style="margin: 30px auto 50px; width: 200px; padding: 10px; text-align: center;">Gallery</h3>
-        <div style="display: flex; gap: 20px; justify-content: flex-start;   overflow-x: scroll;">
+        <h3 style="margin: 30px auto; width: 200px; padding: 10px; text-align: center; color: #28a745;">Gallery</h3>
+        <p style="margin: 20px auto; font-style: italic; text-align: center;">Check out our classes and environments</p>
+        <div style="display: flex; gap: 20px; justify-content: flex-start; padding: 10px;  overflow-x: scroll;">
 
-        <% images.forEach(image => { %>
 
-          <% const img = "/images/" + image %>
-         <img style="width: 400px; height: 400px; object-fit: cover;" src=<%= img %> />
-        <% }) %>
-      
+          <video style="box-shadow:0 0 2px 2px #85858559; border-radius: 5px; width: 70vw; height: 300px; object-fit: fill;" autoplay muted loop src="/videos/WhatsApp Video 2025-10-14 at 1.14.36 PM.mp4"></video>
+          
+          <% images.forEach(image => { %>
+            
+            <% console.log(image);
+           %>
+
+<% const img = "/images/gallery/" + image %>
+<img style="box-shadow:0 0 2px 2px #85858559; width: 70vw; height: 300px; object-fit: cover; border-radius: 5px;" src=<%= img %> />
+<% }) %>
+<video style="box-shadow:0 0 2px 2px #85858559; border-radius: 5px; width: 70vw; height: 300px;" autoplay muted loop src="/videos/WhatsApp Video 2025-10-14 at 1.13.55 PM.mp4"></video>
+
       </div>
 
       </section>

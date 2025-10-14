@@ -16,7 +16,7 @@ app.set("views", __dirname + "/views");
 app.use('images', express.static(__dirname + '/images'));
 
 app.get("/", function (req, res) {   
-  const images = fs.readdirSync(path.join(__dirname, 'public/images'));
+  const images = fs.readdirSync(path.join(__dirname, 'public/images/gallery'));
 
   res.render("Home", {images: images} );
 });
