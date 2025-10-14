@@ -177,7 +177,9 @@ section {
 }
 
 section#reason-cards {
-  padding: 0;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .hero-text {
@@ -257,10 +259,6 @@ h1 {
 }
 
 /* Card Section */
-
-#reason-cards > h3 {
-  display: none;
-}
 
 .card-container {
   margin: auto;
@@ -913,10 +911,6 @@ form button {
     overflow-x: auto;
   }
 
-  #reason-cards > .card-container {
-    top: 0;
-  }
-
   .plans-container {
     width: 100%;
     padding: 0;
@@ -936,6 +930,10 @@ form button {
   .contact-container div {
     width: 90%;
   }
+
+  .contact-container{
+    flex-wrap: wrap-reverse;
+  }
 }
 
 @media (max-width: 470px) {
@@ -948,10 +946,6 @@ form button {
 
   #home {
     max-height: 500px;
-  }
-
-  #reason-cards {
-    width: 100%;
   }
 
   .card-container {
@@ -968,12 +962,11 @@ form button {
   }
 
   .about-container {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   }
 
   .about-container .content,
   .text .content {
-    height: 25vh;
     width: 100%;
     padding: 0;
     margin: 0;

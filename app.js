@@ -1,17 +1,23 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const path = require("path");
 const _ = require("lodash");
+const ejs = require("ejs");
 const PORT = process.env.PORT || 3000;
+const fs = require('fs');
 
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
+app.set('view engine', 'ejs');
+app.use('images', express.static(__dirname + '/images'));
 
-
-app.get("/", function (req, res) {  
-  res.sendFile(__dirname + "/index.html");
+app.get("/", function (req, res) {   
+  const images = fs.readdirSync(path.join(__dirname, 'public/images'));
+  
+  res.render("home", {images: images} );
 });
 
 app.post("/", function (req, res) {
@@ -44,15 +50,11 @@ app.post("/", function (req, res) {
     } catch (error) {
       console.error("Error sending Email:", error);
     }
-
   }
 
   sendEmail();
   res.redirect("/");   
 });
-
-
-
 
 app.listen(PORT, function () {
   console.log("Server started on port 3000");

@@ -1,0 +1,14 @@
+ <section id="reason-cards">
+
+        <h3 style="margin: 30px auto 50px; width: 200px; padding: 10px; text-align: center;">Gallery</h3>
+        <div style="display: flex; gap: 20px; justify-content: flex-start;   overflow-x: scroll;">
+
+        <% images.forEach(image => { %>
+
+          <% const img = "/images/" + image %>
+         <img style="width: 400px; height: 400px; object-fit: cover;" src=<%= img %> />
+        <% }) %>
+      
+      </div>
+
+      </section>
